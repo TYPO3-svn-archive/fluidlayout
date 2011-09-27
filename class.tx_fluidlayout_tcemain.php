@@ -37,14 +37,15 @@ class tx_fluidlayout_tcemain {
 				$data = array();
 				
 				$fluidtemplateAsMainTemplate = t3lib_BEfunc::getRecordsByField('pages', 'tx_fluidlayout_template', $id);
-				foreach($fluidtemplateAsMainTemplate as $page) {
-					$data['pages'][$page['uid']]['backend_layout'] = $fieldArray['backend_layout'];
-					$data['pages'][$page['uid']]['backend_layout_next_level'] = $fieldArray['backend_layout'];
-				}
+				if(is_array($fluidtemplateAsMainTemplate)) {
+					foreach($fluidtemplateAsMainTemplate as $page) {
+						$data['pages'][$page['uid']]['backend_layout'] = $fieldArray['backend_layout'];
+						$data['pages'][$page['uid']]['backend_layout_next_level'] = $fieldArray['backend_layout'];
+					}
 				
-				$pObj->start($data, array());
-				$pObj->process_datamap();
-
+					$pObj->start($data, array());
+					$pObj->process_datamap();
+				}
 			}
 		}
 		
