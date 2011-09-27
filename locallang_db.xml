@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'fluidlayout'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="tx_fluidlayout_template">Template</label>
+			<label index="tx_fluidlayout_template.name">Template name</label>
+			<label index="tx_fluidlayout_template.file">Template file</label>
+			<label index="tx_fluidlayout_template.layout_root_path">Layout root path</label>
+			<label index="tx_fluidlayout_template.partial_root_path">Partial root path</label>
+			<label index="tx_fluidlayout_template.backend_layout">Associated backend layout</label>
+			<label index="pages.tx_fluidlayout_template">Current page, template layout</label>
+		</languageKey>
+	</data>
+</T3locallang>

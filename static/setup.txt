@@ -1,0 +1,35 @@
+page = PAGE
+page {
+	typeNum = 0
+	10 = fluidlayout
+	10 {
+		file {
+			cObject = RECORDS
+			cObject {
+				source.data = levelfield : -1 , tx_fluidlayout_template , slide
+				tables = tx_fluidlayout_template
+				conf.tx_fluidlayout_template = TEXT
+				conf.tx_fluidlayout_template.field = file
+				
+			}
+		}
+		layoutRootPath {
+			cObject = RECORDS
+			cObject {
+				source.field = tx_fluidlayout_template
+				tables = tx_fluidlayout_template
+				conf.tx_fluidlayout_template = TEXT
+				conf.tx_fluidlayout_template.field = layout_root_path
+			}
+		}
+		partialRootPath {
+			cObject = RECORDS
+			cObject {
+				source.field = tx_fluidlayout_template
+				tables = tx_fluidlayout_template
+				conf.tx_fluidlayout_template = TEXT
+				conf.tx_fluidlayout_template.field = partial_root_path
+			}
+		}
+	}
+}
