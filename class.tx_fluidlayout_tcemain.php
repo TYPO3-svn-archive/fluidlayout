@@ -22,11 +22,12 @@ class tx_fluidlayout_tcemain {
 				} else {
 					$value = 0;
 				}
-				
-				$fieldArray = array(
+
+				$backendLayouts = array(
 					'backend_layout' => $value,
 					'backend_layout_next_level' => $value
 				);
+				$fieldArray = array_merge($fieldArray, $backendLayouts);
 			}
 		}
 		
