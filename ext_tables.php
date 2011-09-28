@@ -3,7 +3,8 @@ if (!defined ('TYPO3_MODE')) {
 	die ('Access denied.');
 }
 
-t3lib_extMgm::addStaticFile($_EXTKEY, '/static', 'FLUIDTEMPLATE, auto configuration');
+t3lib_extMgm::addStaticFile($_EXTKEY, '/static/template', 'FLUIDTEMPLATE, auto configuration');
+t3lib_extMgm::addStaticFile($_EXTKEY, '/static/content', 'FLUIDTEMPLATE, content variables');
 
 $TCA['tx_fluidlayout_template'] = array (
 	'ctrl' => array (

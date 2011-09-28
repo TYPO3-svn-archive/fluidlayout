@@ -1,0 +1,9 @@
+page {
+	10 {
+		variables {
+			contentLeft < styles.content.getLeft
+			contentCenter < styles.content.get
+			contentRight < styles.content.getRight
+		}
+	}
+}
